@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1373cd2f-70a7-4ffd-a92d-8f5f7eccc721" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/templates/app1/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/templates/app1/favs.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/favs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/templates/app1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1/templates/app1/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app1/templates/app1/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django2/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="1373cd2f-70a7-4ffd-a92d-8f5f7eccc721" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
