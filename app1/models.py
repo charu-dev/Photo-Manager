@@ -16,8 +16,13 @@ class Album(models.Model):
 
     def __str__(self):
         return self.albumtitle
+
+        
 def upload_loc(User, filename):
     return "%s/%s" %(User.id, filename)
+
+
+
 class Photo(models.Model):
     albumname = models.ForeignKey(Album, on_delete=models.CASCADE)
     Picture = models.FileField(upload_to=upload_loc,null=True, blank=True)
@@ -29,4 +34,9 @@ class Photo(models.Model):
 
     def __str__(self):
         return self.Picture
+
+
+    def get_album_name(self):
+        return self.albumname.albumtitle
+
 

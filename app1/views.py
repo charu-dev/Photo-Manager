@@ -48,7 +48,7 @@ from django.contrib import messages
 
 
 class IndexView(generic.ListView):
-    template_name = 'app1/index.html'
+    template_name = 'app1/index.html' 
     context_object_name = 'all_albums'
     def get_queryset(self):
         return Album.objects.all()
@@ -72,25 +72,36 @@ class AlbumCreate(CreateView):
         return super().form_valid(form)
 
 
-# def addphoto(album.id):
-#     currentalbum=get_object('Album',pk=album.id)
-#     # Album.objects.get(pk=a)
-#     photo- picture,albumname
+# def addphoto(request,my_data):
+#     currentalbum=get_object('Album',pk=my_data)
 #     albumname=currentalbum.albumtitle
-#
+
 #     model = Album
 #     fields = ['Picture','albumname']
 
 
-
+# //Original
 class PhotoCreate(CreateView):
     model = Photo
     fields = ['Picture','albumname']
 
-
     # def form_valid(self, form):
     #     form.instance.albumname= self.request.albumtitle
-    #     return super().form_valid(form)
+    #     return super().form_valid(form)   //original
+
+
+
+# class addphoto(CreateView):
+#     model = Photo
+#     fields = ['Picture']
+    
+
+#     def form_valid(self, form, **kwargs):
+#         album= Album.objects.get(id=kwargs['album_id'])
+#         form.instance.albumname= album.albumtitle
+#         return super().form_valid(form)   
+
+
 
 def favourite(request, album_id):
     album= get_object_or_404(Album,pk= album_id)
@@ -146,6 +157,9 @@ def register(request):
     else:
         form = UserRegisterForm()
     return render(request,'users/register.html',{'form':form})
+
+
+
 
 # class UserFormView(View):
 #     form_class= UserForm
